@@ -18,7 +18,7 @@ export function CompanyProfile({ ticker }) {
   }, [dispatch, ticker]);
 
   const marketCap = humanNumber(info.marketCapitalization);
-  console.log(isLoading);
+
   return (
     <div className={styles.wrapper}>
       {isLoading && <Spinner />}
