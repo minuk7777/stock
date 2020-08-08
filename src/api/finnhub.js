@@ -4,9 +4,7 @@ api_key.apiKey = process.env.REACT_APP_API_KEY;
 
 const finnhubClient = new finnhub.DefaultApi();
 
-export function getCompanyProfile(symbol) {
+export function getCompanyProfile(symbol, callback) {
   //Company profile2
-  finnhubClient.companyProfile2({ symbol }, (error, data, response) => {
-    console.log(data);
-  });
+  finnhubClient.companyProfile2({ symbol }, callback);
 }
