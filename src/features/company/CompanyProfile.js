@@ -24,7 +24,7 @@ export function CompanyProfile({ ticker }) {
       {isLoading && <Spinner />}
       {!isLoading && info.name && (
         <>
-          {info.log && (
+          {info.logo && (
             <img src={info.logo} width="50" height="50" alt="회사로고" />
           )}
           <div>{info.ticker}</div>
